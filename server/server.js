@@ -26,13 +26,13 @@ router.post('/login', api.login);
 router.post('/getUser', api.getUser)
 
 
-router.post('/getProductLines', api.getProductLines)
-router.post('/saveProduct', api.saveProduct)
-router.post('/getProducts', api.getProducts)
-router.post('/getProduct', api.getProduct)
-router.post('/updateProduct', api.updateProduct)
-router.post('/deleteProduct', api.deleteProduct)
-router.post('/searchProduct', api.searchProduct)
+router.post('/getProductLines', products.getProductLines)
+router.post('/saveProduct', products.saveProduct)
+router.post('/getProducts', products.getProducts)
+router.post('/getProduct', products.getProduct)
+router.post('/updateProduct', products.updateProduct)
+router.post('/deleteProduct', products.deleteProduct)
+router.post('/searchProduct', products.searchProduct)
 
 
 app.use('/api', router);
